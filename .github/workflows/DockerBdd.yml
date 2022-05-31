@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: DockerBdd
 
 # Controls when the workflow will run
 on:
@@ -35,3 +35,6 @@ jobs:
         
       - name: Run a docker run
         run: docker run bdd
+        
+      - name: Run docker kill
+        run: docker kill $
